@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -  prints all single digit numbers of base 16
+ * main -  prints hex, 0..f
  *
  * Return: 0
  */
