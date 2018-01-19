@@ -5,9 +5,8 @@
 /**
  * main - prints out the string specificying location of the last digit of n
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
-
 
 int main(void)
 {
