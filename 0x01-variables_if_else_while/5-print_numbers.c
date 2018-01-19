@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -10,7 +8,7 @@
 
 int main(void)
 {
-	char digit = '1';
+	char digit = '0';
 
 	while (digit <= '9')
 	{
