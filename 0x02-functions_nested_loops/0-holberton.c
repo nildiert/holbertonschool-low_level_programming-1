@@ -1,7 +1,6 @@
 #include "holberton.h"
-
 /**
- * Prints out Holberton
+ * main - Prints out Holberton
  *
  * Return: 0
  */
