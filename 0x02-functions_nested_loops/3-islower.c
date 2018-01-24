@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h> /* Used for isupper() and islower() */
 
 /**
  *  _islower - returns 1 if c is lowercase
