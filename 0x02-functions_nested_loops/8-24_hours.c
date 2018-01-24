@@ -2,7 +2,8 @@
 
 /**
  *  jack_bauer - print every minute of the day of Jack Bauer
- * @c: integer input
+ * @m: minutes
+ * @h: hours
  * Return: 00:00 to 23:59
  */
 
