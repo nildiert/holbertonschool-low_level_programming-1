@@ -2,9 +2,7 @@
 
 /**
  *  jack_bauer - print every minute of the day of Jack Bauer
- * @m: minutes
- * @h: hours
- * Return: 00:00 to 23:59
+ * Return: time
  */
 
 void jack_bauer(void)
@@ -26,5 +24,4 @@ void jack_bauer(void)
 		}
 
 	}
-
 }
