@@ -1,13 +1,25 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  *
- *
- * Return: Always 0.
+ * @n: input integer
  */
 
 void print_to_98(int n)
 {
-	_putchar(n + '0');
-	return;
+	while  (n != 98)
+	{
+		printf("%d, ", n);
+
+		if (n > 98)
+		{
+			n--;
+		}
+
+		else
+			n++;
+	}
+
+	printf("98 \n");
 }
