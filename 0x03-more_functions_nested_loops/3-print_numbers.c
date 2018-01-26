@@ -4,7 +4,6 @@
  * print_numbers - print 0 - 9
  *
  *
- * Return: c
  */
 
 void print_numbers(void)
