@@ -1,22 +1,27 @@
 #include "holberton.h"
 
 /**
- * print_rev - print a string in reverse
- *
- * @s: length of a string
- *
- * Return: returns length of a string
+ * _strlen - print lenght of a string
+ * @s: string
+ * Return: length
  */
+
 
 int _strlen(char *s)
 {
 	int length;
 
-	for (length = 0; s[length] != '\0'; length++);
+	for (length = 0; s[length] != '\0'; length++)
+		;
 	/* string counter */
 
 	return (length);
 }
+
+/**
+ * print_rev - print a string in reverse
+ * @s: length of a string
+ */
 
 void print_rev(char *s)
 {
