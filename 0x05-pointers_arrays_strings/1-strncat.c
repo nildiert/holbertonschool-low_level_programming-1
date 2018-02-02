@@ -3,9 +3,11 @@
 /**
  * _strncat - concatenates two strings
  *
- * @char: char
  * @src: source of string
+ * @dest: destination
  * @n: total number of bytes
+ *
+ * Return: destination
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -16,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	for (count = 0; dest[count] != '\0'; count++)
 		;
 
-	while ( x < n && src[x] != '\0') /* declare stop point too */
+	while (x < n && src[x] != '\0') /* declare stop point too */
 	{
 		dest[count] = src[x];
 		x++;
