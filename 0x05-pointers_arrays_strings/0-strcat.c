@@ -1,12 +1,12 @@
 #include "holberton.h"
 
- /**
-  * _strcat - concatenates two strings
-  *
-  * @dest: string destination
-  *
-  * @src: string source
-  */
+/**
+ *_strcat - concatenates two strings
+ *
+ * @dest: string destination
+ * @src: string source
+ * Return: destination output
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -21,10 +21,10 @@ char *_strcat(char *dest, char *src)
 	for (count = 0; dest[count] != '\0'; count++) /* find dest len */
 		dest_len++;
 
-	for (count = 0; count < src_len; count ++)
+	for (count = 0; count < src_len; count++)
 		dest[dest_len + count] = src[count];
 
 	dest[dest_len + count] = '\0'; /* add null */
 
-		return(dest);
+		return (dest);
 }
