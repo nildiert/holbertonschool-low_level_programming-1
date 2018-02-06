@@ -7,7 +7,7 @@
  * @b: number to place into the array
  * @n: number of replacement to make
  *
- * Return: destination
+ * Return: string
  */
 
 char *_memset(char *s, char b, unsigned int n)
