@@ -6,7 +6,7 @@
  * @s: initial segement
  * @accept: bytes
  *
- * Return: how many are matching
+ * Return: matching
  */
 
 char *_strpbrk(char *s, char *accept)
