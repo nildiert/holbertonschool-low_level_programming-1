@@ -22,7 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				k++;
-				break; /* breaks out of outer loop */
+				break; /* breaks out of inner loop */
 			}
 		}
 		if (accept[j] == '\0')
