@@ -6,7 +6,7 @@
  * @s: initial segement
  * @accept: bytes
  *
- * Return: return c or null
+ * Return: how many are matching
  */
 
 unsigned int _strspn(char *s, char *accept)
