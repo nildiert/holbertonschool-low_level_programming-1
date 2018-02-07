@@ -5,7 +5,6 @@
  *
  * @a: array
  *
- * Return: matching
  */
 
 void print_chessboard(char (*a)[8])
