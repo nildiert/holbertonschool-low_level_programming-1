@@ -10,7 +10,7 @@
  */
 
 
-int square_root (int n, int mult)
+int square_root(int n, int mult)
 {
 	if (n == mult)
 		return (-1);
@@ -29,7 +29,7 @@ int square_root (int n, int mult)
  * Return: square root of a number
  */
 
-int _sqrt_recursion (int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
