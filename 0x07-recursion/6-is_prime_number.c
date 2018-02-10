@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * prime_check - check if number is a prime
- * is_prime_number - returns 1 if input integer is a prime number, else 0
+ * prime_check - checks if number is a prime
  *
  * @n: input number
  * @x: text number
+ *
  * Return: if prime return 1 if not return 0
  */
 
@@ -20,10 +20,18 @@ int prime_check(int n, int x)
 	return ((prime_check(n, x + 1)));
 }
 
+/**
+* is_prime_number - final check for if number is a prime
+*
+* @n: input number
+*
+* Return: 1, 0, -1
+*/
+
 int is_prime_number(int n)
 {
 	if (n < 0)
-		return (1);
+		return (0);
 
 	if (n == 1)
 		return (0);
