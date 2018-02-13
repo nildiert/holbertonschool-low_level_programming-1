@@ -3,29 +3,30 @@
 /**
  * *leet - replaces 'aA,eE, oO, tT, l,L with 4,3,0,7,1
  *
- * @char - string input
+ * @char: string input
  *
  * Return: char *
  */
 
-char *leet(char *)
+char *leet(char *s)
 {
-	x[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'}
+	int x[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	y[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'}
+	int y[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	int x[];
-	int y[];
+	int i = 0;
+	int j;
 
-	while (str[index] != '\0')
+	while (s[i] != '\0')
 	{
-		while (str[index] != x[new_index] && x[new_index] != '\0')
+		for (j = 0; x[j]; j++)
 		{
-			new_index++;
+			if (x[j] == s[i])
+				s[i] = y[j];
 		}
 
-		if (new_index] != '\0');
-
-		str[index] = y[new_index]
+		i++;
 	}
+
+	return (s);
 }
