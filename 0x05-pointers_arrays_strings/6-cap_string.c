@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalizes all worlds of a string
  *
- * @char - string input
+ * @s: string input
  *
  * Return: 0
  */
@@ -12,7 +12,8 @@ char *cap_string(char *s)
 {
 	int i;
 	int j;
-	int sp[] = {' ','\n','\t',',',';','.','!','?','"','(',')','{','}','\0'};
+	int sp[] = {' ', '\n', '\t', ',', ';', '.', '!',
+		    '?', '"', '(', ')', '{', '}', '\0'};
 
 	if (s[0] >= 'a' && s[0] <= 'z')
 		s[0] -= 32;
