@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * argstostr - seperate all arguments in new lines
@@ -15,7 +16,7 @@ char *argstostr(int ac, char **av)
 	int i; /* counter */
 	int j; /* counter 2 */
 	int k = 0; /* counter 3 */
-	int tot; /* total*/
+	int tot = 0; /* total*/
 	char *m;
 
 	if (ac == 0 || av == NULL)
@@ -30,7 +31,9 @@ char *argstostr(int ac, char **av)
 
 		tot++;
 	}
+
 	tot++;
+
 	m = malloc(sizeof(char) * (tot));
 
 	if (m == NULL)
