@@ -13,41 +13,29 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i; /* counter */
-	int j; /* counter 2 */
-	int k = 0; /* counter 3 */
+	int i; /* ac counter */
+	int j = 0; /* overall letter count */
+	int z; /* array counter */
+	int k = 0; /* destination counter */
 	int tot; /* total*/
 	char *m;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
-/*		printf("%s\n", av[i]); */
-		for (j = 0; av[i][j] != '\0'; j++);
+		for (z = 0; av[i][z] != '\0'; z++)
 		{
-			/*	tot++;
-				printf("%c %d\n", av[i][j], tot); */
+			j++; /* increments letter count */
 		}
-
-		/* tot++;
-		printf("%d\n", tot); */
+		j++; /* adds space for null / newline */
 	}
-
-	/* tot++;
-	   printf("%d\n", tot); */
-
 	tot = i + j;
-
 	m = malloc(sizeof(char) * (tot));
-
 	if (m == NULL)
 		return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
-
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			m[k] = av[i][j];
@@ -56,8 +44,6 @@ char *argstostr(int ac, char **av)
 		m[k] = '\n';
 		k++;
 	}
-
 	m[k] = '\0';
-
 	return (m);
 }
