@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 		}
 		j++; /* adds space for null / newline */
 	}
-	tot = i + j + 1;
+	tot = j + 1;
 	m = malloc(sizeof(char) * (tot));
 	if (m == NULL)
 		return (NULL);
