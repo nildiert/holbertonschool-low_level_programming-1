@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	int j = 0; /* overall letter count */
 	int z; /* array counter */
 	int k = 0; /* destination counter */
-	int tot; /* total*/
+	int tot; /* total */
 	char *m;
 
 	if (ac == NULL || av == NULL)
