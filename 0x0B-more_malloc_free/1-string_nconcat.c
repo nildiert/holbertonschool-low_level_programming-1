@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * str_nconcat - concatenates two strings to destination string
+ * string_nconcat - concatenates two strings to destination string
  *
  * @s1: string 1
  * @s2: string 2
+ * @n: n len of a string
  *
  * Return: destination
  */
@@ -32,11 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 
-
 	sum = i + n + 1; /* s1 + s2/n + '\0' */
-
-	/* if (j > n)
-	   j = n; */
 
 	dest = malloc(sizeof(char) * sum);
 
