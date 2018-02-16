@@ -20,9 +20,7 @@ char *argstostr(int ac, char **av)
 	int tot; /* total*/
 	char *m;
 
-	if (ac == 0)
-		return (NULL);
-	if (av == NULL)
+	if (ac == NULL || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
@@ -32,7 +30,7 @@ char *argstostr(int ac, char **av)
 		}
 		j++; /* adds space for null / newline */
 	}
-	tot = i + j;
+	tot = i + j + 1;
 	m = malloc(sizeof(char) * (tot));
 	if (m == NULL)
 		return (NULL);
