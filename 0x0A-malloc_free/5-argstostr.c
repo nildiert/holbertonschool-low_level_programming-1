@@ -20,7 +20,9 @@ char *argstostr(int ac, char **av)
 	int tot; /* total*/
 	char *m;
 
-	if (ac == 0 || av == NULL)
+	if (ac == 0)
+		return (NULL);
+	if (av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
