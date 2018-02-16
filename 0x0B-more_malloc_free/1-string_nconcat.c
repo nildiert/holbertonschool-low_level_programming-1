@@ -32,6 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 
+	if (j > n)
+		j = n;
+
 	sum = i + n + 1; /* s1 + s2/n + '\0' */
 
 	/* if (j > n)
