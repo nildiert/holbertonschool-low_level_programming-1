@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 	int i; /* counter */
 	int j; /* counter 2 */
 	int k = 0; /* counter 3 */
-	int tot = 0; /* total*/
+	int tot; /* total*/
 	char *m;
 
 	if (ac == 0 || av == NULL)
@@ -24,15 +24,21 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
+/*		printf("%s\n", av[i]); */
 		for (j = 0; av[i][j] != '\0'; j++);
 		{
-			tot++;
+			/*	tot++;
+				printf("%c %d\n", av[i][j], tot); */
 		}
 
-		tot++;
+		/* tot++;
+		printf("%d\n", tot); */
 	}
 
-	tot++;
+	/* tot++;
+	   printf("%d\n", tot); */
+
+	tot = i + j;
 
 	m = malloc(sizeof(char) * (tot));
 
