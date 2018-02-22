@@ -5,6 +5,8 @@
  * get_op_func - selects the correct function to perform the operation asked
  *
  * @s: operator passed as an argument to the program
+ *
+ * Return: calls a pointer from structs and returns the operator
  */
 
 int (*get_op_func(char *s))(int, int)
