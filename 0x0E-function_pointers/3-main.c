@@ -4,7 +4,9 @@
  * main - main function
  *
  * @argc: argument count
- * @arvg: argument array
+ * @argv: argument array
+ *
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -34,7 +36,7 @@ int main(int argc, char *argv[])
 	if (k == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	result = k(i, j);
