@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * array_iterator - execute a parameter on each element of an array
+ * array_iterator - executes a parameter on each element of an array
  *
  * @array: array of values
  * @size: size of the array
@@ -14,12 +14,12 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i = 0;
+	size_t i = 0;
 
 	while (i < size)
 	{
-	action(array[i]);
-	i++;
+		action(array[i]);
+		i++;
 	}
 
 }
