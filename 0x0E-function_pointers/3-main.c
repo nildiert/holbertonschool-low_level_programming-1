@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * main - main function
+ * main - entry point
  *
  * @argc: argument count
  * @argv: argument array
@@ -24,6 +24,12 @@ int main(int argc, char *argv[])
 
 	k = (get_op_func(argv[2]));
 
+	if (k == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	i = atoi(argv[1]);
 	j = atoi(argv[3]);
 
@@ -31,12 +37,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(100);
-	}
-
-	if (k == NULL)
-	{
-		printf("Error\n");
-		exit(99);
 	}
 
 	result = k(i, j);
