@@ -1,9 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_numbers - prints numbers, followed by a new line.
  *
- * Return: Always 0.
+ * @separator: comma that seperates values
+ * @n: values
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
