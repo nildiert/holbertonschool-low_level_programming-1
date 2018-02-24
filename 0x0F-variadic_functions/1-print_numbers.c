@@ -13,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int value;
 
-	va_start (vlist, n);
+	va_start(vlist, n);
 
 	for (i = 0; i < n; i++)
 	{
@@ -22,11 +22,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		if (separator != NULL)
 		{
-			if ( i < (n - 1)) /* doesn't print the last separator */
+			if (i < (n - 1)) /* doesn't print the last separator */
 				printf("%s", separator);
 		}
 	}
 	printf("\n");
 
-	va_end (vlist);
+	va_end(vlist);
 }
