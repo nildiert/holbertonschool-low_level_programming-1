@@ -44,6 +44,11 @@ void print_s(va_list risuto)
 	char *str;
 
 	str = va_arg(risuto, char*);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
 	printf("%s", str);
 }
 
