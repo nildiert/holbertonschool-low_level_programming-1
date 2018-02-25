@@ -78,9 +78,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *(types[j].ro))
 			{
-				printf("%s", m);
+				printf("%s", b);
 				(types[j].f)(risuto);
-				m = n; /* reassign to separator */
+				b = cs; /* reassign to separator */
 			}
 		j++;
 		}
