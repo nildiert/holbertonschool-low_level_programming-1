@@ -76,7 +76,8 @@ void print_all(const char * const format, ...)
 	va_start(risuto, format);
 
 	i = 0;
-	while (format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
+/* fails right away with this order before going into the array */
 	{
 		j = 0;
 		while (types[j].ro != NULL)
