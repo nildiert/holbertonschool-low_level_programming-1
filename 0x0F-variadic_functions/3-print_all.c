@@ -42,7 +42,7 @@ void print_f(va_list risuto)
 void print_s(va_list risuto)
 {
 	char *str;
-
+	/* compare actual elements that you intend to */
 	str = va_arg(risuto, char*);
 	if (str == NULL)
 	{
