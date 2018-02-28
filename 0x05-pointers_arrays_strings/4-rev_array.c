@@ -20,6 +20,4 @@ void reverse_array(int *a, int n)
 		a[i] = a[n - i - 1]; /* last item in array */
 		a[n - i - 1] = temp;
 	}
-
-	return;
 }
