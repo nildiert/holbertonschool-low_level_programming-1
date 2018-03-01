@@ -4,9 +4,9 @@
 /**
  * *leet - replaces 'aA,eE, oO, tT, l,L with 4,3,0,7,1
  *
- * @char: string input
+ * @s: string input
  *
- * Return: char *
+ * Return: s
  */
 
 char *leet(char *s)
