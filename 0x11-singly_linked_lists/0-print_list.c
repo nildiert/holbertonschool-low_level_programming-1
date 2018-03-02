@@ -3,7 +3,7 @@
 /**
  * print_list - returns the number of elements in a linked list
  *
- * @len: length of the string
+ * @h: linked list
  *
  * Return: count, number of nodes
  */
@@ -15,11 +15,11 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-			printf ("[0] (nil)\n");
+			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", h->len, h->str);
 
-		h= h->next;
+		h = h->next;
 		count++;
 	}
 	return (count);
