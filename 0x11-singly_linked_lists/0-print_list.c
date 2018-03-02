@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - singly linked list
+ * print_list - returns the number of elements in a linked list
  *
  * @len: length of the string
  *
