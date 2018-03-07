@@ -3,6 +3,7 @@
 /**
  * delete_nodeint_at_index - deletes the node at index of a linked list
  * @head: pointer to a pointer
+ * @index: index of the node that should be deleted
  * Return: 1 if successful or -1 if fails
  */
 
