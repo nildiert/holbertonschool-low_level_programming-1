@@ -1,5 +1,13 @@
 #include "lists.h"
 
+/**
+ * insert_nodeint_at_index - insert a new node at a given position
+ * @head: pointer to a pointer
+ * @idx: index of the list where the new node should be added
+ * @n: values of the struct
+ * Return: nothing
+ */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *temp, *new_node;
@@ -30,7 +38,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	temp = *head; /* keeps *head */
 
 	while (counter < idx - 1) /* location of insertion */
- 	{
+	{
 		if (temp == NULL)
 			return (NULL);
 		temp = temp->next;
