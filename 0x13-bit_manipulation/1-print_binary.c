@@ -8,12 +8,14 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int num;
+	unsigned long int number;
 
-	num = n & 1;
+	number = n & 1; /* bitwise comparison */
 
-	if ((n = n >> 1)) /* assigns n to be shifted & also checks if n > 0 */
-		print_binary(n);
+	n = n >> 1;
 
-	_putchar(num + '0');
+	if (n > 0)
+		print_binary(n); /* recalls function until n > 0 */
+
+	_putchar(number + '0');
 }
