@@ -1,23 +1,27 @@
 #include "holberton.h"
 
 /**
- * flip_bits - return number of times you need to flip to get to another number
- * @n: input value
- * @m: another input value
- * Return: count, number of times you flipped
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int mask = 1;
-	unsigned long int checker = n ^ m;
-	int count = 0;
+	unsigned long int temp = 0;
+	int counter = 0;
+	int i = 0;
 
-	while (checker > 0)
+	mask = mask << temp;
+
+	while (i < 63)
 	{
-		count += (checker & mask); /* if first bit is 1, count++ */
-		checker = checker >> 1;
+		temp = n ^ m;
+		counter += (temp & mask);
+		mask = mask >> 1;
+		i++;
 	}
 
-	return (count);
+	return (counter);
 }
