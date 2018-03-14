@@ -33,8 +33,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buf[bytes_read] = '\0'; /* set null terminator */
 
-	close(fd);
-
 	bytes_written =  write(STDOUT_FILENO, buf, bytes_read);
 	/* write to std out of buf based on bytes_read */
 
@@ -42,6 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	free(buf);
+	close(fd);
 
 	return (bytes_read);
 }
