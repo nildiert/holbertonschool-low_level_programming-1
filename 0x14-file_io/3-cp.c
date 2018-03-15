@@ -10,7 +10,7 @@
 
 void error_98(char *fd)
 {
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s/n", fd);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fd);
 	exit(98);
 }
 
@@ -22,7 +22,7 @@ void error_98(char *fd)
 
 void error_99(char *fd)
 {
-	dprintf(STDERR_FILENO, "Error: Can't write to %s/n", fd);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fd);
 	exit(99);
 }
 
@@ -34,7 +34,7 @@ void error_99(char *fd)
 
 void error_100(int fd)
 {
-	dprintf(STDERR_FILENO, "Error: Can't close %d/n", fd);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd);
 	exit(100);
 }
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)  /* ./cp from to */
 	{
-		dprintf(STDERR_FILENO, "Useage: cp file_from file_to/n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
