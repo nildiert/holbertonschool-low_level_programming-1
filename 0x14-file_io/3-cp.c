@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 	if ((file_2 == -1))
 		error_99(argv[2]);
 
-	while ((read_file = read(file_1, buf, 1024)) > 0)
+	while ((read_file = read(file_1, buf, 1024)) != 0)
 	{
 		if (read_file == -1)
 			error_98(argv[1]);
