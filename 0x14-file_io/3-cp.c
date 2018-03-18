@@ -3,8 +3,6 @@
 /**
  * error_98 - helper function to print out error 98
  * @fd: file descriptor
- * @file_1:
- * @file_2:
  * Return: Nothing
  */
 
