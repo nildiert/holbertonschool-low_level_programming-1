@@ -18,7 +18,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 /*if the count matches the index then return, else continue */
 		if (count == index)
-			return (count);
+			return (ptr);
 
 		ptr = ptr->next;
 		count++;
