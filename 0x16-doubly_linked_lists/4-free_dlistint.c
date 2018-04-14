@@ -2,7 +2,7 @@
 
 /**
  * free_dlistint - free a doubly linked list
- * @head - pointer to the head of the linked list
+ * @head: pointer to the head of the linked list
  * Return: nothing
  */
 
