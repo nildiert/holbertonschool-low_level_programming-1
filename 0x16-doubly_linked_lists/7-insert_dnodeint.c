@@ -39,18 +39,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx != counter)
 		return (NULL);
 
-/* adds node to the nth place of index */
-	newnode->next = ptr;
-	newnode->prev = ptr->prev;
-	ptr->prev->next = newnode;
-	ptr->prev = newnode;
-
 /*adds a new node to the end of the list */
 	if (ptr == NULL)
 	{
 		add_dnodeint_end(h, n);
 		return (newnode);
 	}
+
+/* adds node to the nth place of index */
+	newnode->next = ptr;
+	newnode->prev = ptr->prev;
+	ptr->prev->next = newnode;
+	ptr->prev = newnode;
 
 	return (newnode);
 }
