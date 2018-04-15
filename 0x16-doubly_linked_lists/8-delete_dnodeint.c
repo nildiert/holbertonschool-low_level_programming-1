@@ -26,10 +26,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		count++;
 	}
 
-	if (index > count)
+	if (index >= count)
 		return (-1);
 
-	if (index == 0)
+	if (index > 0)
 	{
 		*head = ptr->next;
 		ptr->prev = NULL;
