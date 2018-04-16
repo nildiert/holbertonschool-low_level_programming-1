@@ -16,8 +16,11 @@ int _atoi(char *s)
 
 	if (s == NULL)
 		return (-1);
+	if (*s == '\0')
+		return (0);
 
 	ptr = s;
+	
 	while (*ptr != '\0')
 	{
 		if (*ptr >= '0' && *ptr <= '9')
