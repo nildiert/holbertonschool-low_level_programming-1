@@ -39,7 +39,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	/* deletes head of list if list has 2 or more nodes */
 	if (index == 0 && count > 1)
 	{
-		ptr = ptr->next;
+		*head = ptr->next;
 		(*head)->prev = NULL;
 		free(ptr);
 		return (1);
