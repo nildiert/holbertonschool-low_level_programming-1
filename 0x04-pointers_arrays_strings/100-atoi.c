@@ -20,7 +20,7 @@ int _atoi(char *s)
 		return (0);
 
 	ptr = s;
-	
+
 	while (*ptr != '\0')
 	{
 		if (*ptr >= '0' && *ptr <= '9')
