@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _atoi - converts a char to an int
  * @s: input string
