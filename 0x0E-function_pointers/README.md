@@ -1,6 +1,6 @@
 # 0x0E. C - Function pointers
 ---
-## Description - #226
+## Description - 226
 
 This project in the Lower Level Programming series is about:
 * What are function pointers and how to use them
