@@ -1,6 +1,6 @@
 # 0x0D. C - Structures, typedef
 ---
-## Description - #225
+## Description - \#225
 
 This project in the Lower Level Programming series is about:
 * What are structures, when, why and how to use them
