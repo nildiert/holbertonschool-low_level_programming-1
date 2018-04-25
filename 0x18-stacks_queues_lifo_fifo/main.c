@@ -55,15 +55,15 @@ char **strtok(char *s)
 		return (NULL);
 
 	token = strtok(s, DELIMITERS);
-	
+
 	strcmp((token, "push") != 0)
 		get_op_func(token); /* realloc memory? */
 
 	else
 		while (token != 0)
-			{
-				token = strok(NULL, DELIMITERS); /*check again*/
-				tokens[i] = token; /*save parsed tokens*/
-				i++
-			}
+		{
+			token = strok(NULL, DELIMITERS); /*check again*/
+			tokens[i] = token; /*save parsed tokens*/
+			i++;
+		}
 }
