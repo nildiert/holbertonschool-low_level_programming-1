@@ -10,7 +10,7 @@ void op_push(stackt_t **stack, unsigned int line_number)
 		error(malloc);
 
 
-	plates->n = *s[1];
+	plates->n = data;
 	plates->prev = NULL;
 
 
@@ -26,4 +26,5 @@ void op_push(stackt_t **stack, unsigned int line_number)
 		head->prev = plates;
 		head = plates;
 	}
+
 }
