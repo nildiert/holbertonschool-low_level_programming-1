@@ -14,10 +14,9 @@ int main(int argc char* argv[])
 	if (fd = NULL)
 		error(fopen);
 
-	if (getline(buffer, buffsize, fd) == -1)
+	if (getline(buffer, buffsize, fd) != -1)
 		_strtok(buffer);
 
-	fopen
 
 }
 
@@ -36,28 +35,32 @@ char **strtok(char *s)
 	while (s[i])
 	{
 		while (delimiter_check(s[i]))
+		{
 			i++;
+		}
 
-		if (s[i] == NULL)
+		if (s[i] == '\0')
 			break;
 
 		tok++;
 
-		while (!delimiter_check(s[i])
-		       i++;
+		while (!delimiter_check(s[i]))
+		{
+			i++;
+		}
 	}
 
-		tokens = malloc(sizeof(char *) * tok);
-		if (tokens == NULL)
-			return (NULL);
+	tokens = malloc(sizeof(char *) * tok);
+	if (tokens == NULL)
+		return (NULL);
 
-		token = strtok(s, DELIMITERS);
+	token = strtok(s, DELIMITERS);
+	
+	strcmp((token, "push") != 0)
+		get_op_func(token); /* realloc memory? */
 
-		strcmp((token, "push") != 0)
-			get_op_func(token); /* realloc memory? */
-
-		else
-			while (token != 0)
+	else
+		while (token != 0)
 			{
 				token = strok(NULL, DELIMITERS); /*check again*/
 				tokens[i] = token; /*save parsed tokens*/
