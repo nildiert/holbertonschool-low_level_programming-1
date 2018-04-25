@@ -2,8 +2,7 @@
 
 void op_push(stackt_t **stack, unsigned int line_number)
 {
-	stack_t plates;
-	stack_t head;
+	stack_t plates = NULL;
 	int i;
 
 	plates = malloc(sizeof(stack_t));
@@ -15,7 +14,7 @@ void op_push(stackt_t **stack, unsigned int line_number)
 	plates->prev = NULL;
 
 
-	if (head == NULL)
+	if (stack == NULL)
 	{
 		plates->next = NULL;
 		head = plates;
