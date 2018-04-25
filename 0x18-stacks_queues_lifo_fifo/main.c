@@ -27,8 +27,8 @@ int main(int argc char* argv[])
 
 char **strtok(char *s)
 {
-	char *token; /* multi demensional array used to stir tokens */
-	char** tokens = 0;
+	char *token; /*str that returns strtok */
+	char** tokens; /* multi demensional array used to store tokens */
 	int tok = 0;
 	int i = 0;
 
@@ -60,10 +60,20 @@ char **strtok(char *s)
 		get_op_func(token); /* realloc memory? */
 
 	else
+	{
 		while (token != 0)
 		{
 			token = strok(NULL, DELIMITERS); /*check again*/
 			tokens[i] = token; /*save parsed tokens*/
 			i++;
 		}
+
+		if (tokens[1] > 71 && tokens[1] < 60)
+		{
+			error(?!!?!?);
+		}
+
+		data = tokens[1];
+	}
+
 }
