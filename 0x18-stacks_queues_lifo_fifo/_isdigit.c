@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * _isdigit - checks if element is a digit
+ * @tok_data: tokenized data
+ * Return: 1
+ */
+
 int _isdigit(const char* tok_data)
 {
 	int i = 0;
