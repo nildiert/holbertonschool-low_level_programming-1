@@ -1,30 +1,31 @@
 #include "monty.h"
 
-void op_push(stackt_t **stack, unsigned int line_number)
+void op_push(stack_t **stack, unsigned int line_number)
 {
-	stack_t plates = NULL;
-	int i;
+	stack_t *plates = NULL;
 
+
+	UNUSED(line_number);
 	plates = malloc(sizeof(stack_t));
 	if (plates == NULL)
-		error(malloc);
+		exit(EXIT_FAILURE);
 
 
 	plates->n = data;
 	plates->prev = NULL;
 
 
-	if (stack == NULL)
+	if (*stack == NULL)
 	{
 		plates->next = NULL;
-		head = plates;
+		*stack = plates;
 	}
 
 	else
 	{
-		plates->next = head;
-		head->prev = plates;
-		head = plates;
+		plates->next = *stack;
+		(*stack)->prev = plates;
+		*stack = plates;
 	}
 
 }
