@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	size_t buffsize;
 	FILE *fd;
 	unsigned int line_number;
-	stack_t **stack = NULL;
+	stack_t *stack = NULL;
 	instruction_t *f;
 	char *token = NULL;
 
@@ -27,12 +27,14 @@ int main(int argc, char* argv[])
 	line_number = 0;
 	buffsize = 0;
 	buffer = NULL;
+
 	while (getline(&buffer, &buffsize, fd) != -1)
 	{
 		line_number++;
 		token = tokenize(buffer);
-		f = get_op_func(token);
-		f->f(stack, line_number);
+		f = (get_op_func(token));
+		if(f->f)
+			f->f(&stack, line_number);
 	}
 	return (0);
 }
@@ -49,16 +51,14 @@ char *tokenize(char *s)
 
 	token = strtok(s, DELIMITERS);
 
-
 	if (strcmp(token, "push") == 0)
 	{
 		tok_data = strtok('\0', DELIMITERS);
-		if (tok_data)
+		if (!tok_data || !_isdigit(tok_data))
 			exit(EXIT_FAILURE);
+
 		data = atoi(tok_data);
 	}
-	get_op_func(token); /* grabs correct op func */
 
 	return (token);
-
 }
