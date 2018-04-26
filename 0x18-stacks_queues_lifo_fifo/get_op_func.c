@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * get_op_func - 
+ * @s: 
+ * Return: 
+ */
+
 instruction_t *get_op_func(const char *s)
 {
 	int i;
@@ -9,9 +15,6 @@ instruction_t *get_op_func(const char *s)
 		{"pall", op_pall},
 		{NULL, NULL}
 /*
-
-
-
 		{"pint", op_pint},
 		{"pop", op_pop},
 		{"swap", op_swap},
