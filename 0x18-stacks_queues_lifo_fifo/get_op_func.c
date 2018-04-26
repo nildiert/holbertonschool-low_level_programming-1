@@ -1,9 +1,15 @@
 #include "monty.h"
 
-f get_op_func(const char *s)
+instruction_t *get_op_func(const char *s)
 {
+	int i;
+	instruction_t *opc = NULL;
 	instruction_t ops [] = {
 		{"push", op_push},
+		{NULL, NULL}
+/*
+
+
 		{"pall", op_pall},
 		{"pint", op_pint},
 		{"pop", op_pop},
@@ -15,11 +21,13 @@ f get_op_func(const char *s)
 		{"mul", op_mul},
 		{"mod", op_mod},
 		{NULL, NULL}
+*/
 	};
 
 	i = 0;
 	while (ops[i].opcode && strcmp(ops[i].opcode, s) != 0)
 		i++;
-
-	return (ops[i].f);
+	opc->opcode = ops[i].opcode;
+	opc->f = ops[i].f;
+	return (opc);
 }
