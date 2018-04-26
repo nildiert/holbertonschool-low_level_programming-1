@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * op_push - pushes an element into the stack
+ * @stack: double pointer to the stack
+ * @line_number: line number
+ * Return: nothing
+ */
+
 void op_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *plates = NULL;
