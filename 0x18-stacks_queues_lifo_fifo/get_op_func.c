@@ -3,14 +3,15 @@
 instruction_t *get_op_func(const char *s)
 {
 	int i;
-	instruction_t *opc = NULL;
+	instruction_t *opc;
 	instruction_t ops [] = {
 		{"push", op_push},
+		{"pall", op_pall},
 		{NULL, NULL}
 /*
 
 
-		{"pall", op_pall},
+
 		{"pint", op_pint},
 		{"pop", op_pop},
 		{"swap", op_swap},
@@ -24,9 +25,14 @@ instruction_t *get_op_func(const char *s)
 */
 	};
 
+	opc = malloc(sizeof(instruction_t));
+	if (opc == NULL)
+		exit(EXIT_FAILURE);
+
 	i = 0;
 	while (ops[i].opcode && strcmp(ops[i].opcode, s) != 0)
 		i++;
+
 	opc->opcode = ops[i].opcode;
 	opc->f = ops[i].f;
 	return (opc);
