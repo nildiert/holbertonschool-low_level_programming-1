@@ -10,7 +10,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
-	hash_node_t *head;
+	hash_node_t *tmp;
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
@@ -22,14 +22,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	/* locate and retrieve value */
-	head = ht->array[index];
-	while (head != NULL)
+	tmp = ht->array[index];
+	while (tmp != NULL)
 	{
-		if (strcmp(head->key, key) == 0)
+		if (strcmp(tmp->key, key) == 0)
 		{
-			return (head->value);
+			return (tmp->value);
 		}
-		head = head->next;
+		tmp = tmp->next;
 	}
+
+	/* does not find a match */
 	return (NULL);
 }
