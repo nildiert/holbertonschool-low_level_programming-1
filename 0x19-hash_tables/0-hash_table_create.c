@@ -15,10 +15,18 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (hashTable == NULL)
 		return (NULL);
 
+	/* assign size parameter to be size of hashtable */
+	hashTable->size = size;
+
+	/* allocate memory for hash table nodes */
 	hashTable->array = malloc(sizeof(hash_node_t *) * size);
 	if (hashTable->array == NULL)
+	{
+		free(hashTable);
 		return (NULL);
+	}
 
+	/* Go through array and assign NULL to each node */
 	for (i = 0; i < size; i++)
 		hashTable->array[i] = NULL;
 
