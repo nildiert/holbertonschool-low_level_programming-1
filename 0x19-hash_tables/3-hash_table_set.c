@@ -17,8 +17,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
+	/* find index */
 	index = key_index((const unsigned char *)key, ht->size);
 
+	/* go through hash table and linked lists */
 	ptr = ht->array[index];
 	while (ptr != NULL)
 	{
@@ -32,6 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ptr = ptr->next;
 	}
 
+	/* allocate newNode */
 	newNode = malloc(sizeof(hash_node_t *));
 	if (newNode == NULL)
 		return (0);
