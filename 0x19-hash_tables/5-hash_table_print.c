@@ -17,12 +17,15 @@ void hash_table_print(const hash_table_t *ht)
 	/* go through hash table */
 	for (size = 0; size < ht->size; size++)
 	{
+		/* ignore nodes */
 		if (ht->array[size] == NULL)
 			continue;
+
+		/* set condition to print commas */
 		if (tmp == 1)
 			printf(", ");
-
 		tmp = 1;
+
 		ptr = ht->array[size];
 		/* go through linked list */
 		while (ptr != NULL)
