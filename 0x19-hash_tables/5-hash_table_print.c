@@ -8,9 +8,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *ptr;
-	unsigned long int tmp = 0;
-	unsigned long int size = 0;
-	unsigned long int counter = 0;
+	unsigned long int size, tmp = 0;
 
 	if (ht == NULL)
 		return;
@@ -30,10 +28,9 @@ void hash_table_print(const hash_table_t *ht)
 		while (ptr != NULL)
 		{
 			printf("'%s': '%s'", ptr->key, ptr->value);
-			if (counter == size)
+			if (ptr->next != NULL)
 				printf(", ");
 			ptr = ptr->next;
-			counter++;
 		}
 	}
 	printf("}\n");
