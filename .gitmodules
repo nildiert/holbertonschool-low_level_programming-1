@@ -4,6 +4,6 @@
 [submodule "0x18-stacks_queues_lifo_fifo"]
 	path = 0x18-stacks_queues_lifo_fifo
 	url = https://github.com/vmdn23/monty.git
-[submodule "sorting_algorithms"]
-	path = sorting_algorithms
+[submodule "0x1A-sorting_algorithms"]
+	path = 0x1A-sorting_algorithms
 	url = https://github.com/vmdn23/sorting_algorithms.git
