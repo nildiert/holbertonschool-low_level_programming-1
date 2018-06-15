@@ -14,10 +14,10 @@ This project in the Lower Level Programming series is about:
 ---
 File|Task
 ---|---
-0-Makefile | Creates a Makefile
-1-Makefile | Create a Makefile using 2 varibles: CC & SRC
-2-Makefile | Create a Makefile using 4 variables: CC, SRC, OBJ, & NAME
-3-Makefile | Create a Makefile with variables and a cleaning option
+0-Makefile | A simple Makefile
+1-Makefile | A Makefile with 2 varibles: CC & SRC
+2-Makefile | A Makefile with 4 variables: CC, SRC, OBJ, & NAME
+3-Makefile | A Makefile with variables and a cleaning option
 4-Makefile |
 5-island_perimeter.py | A function that returns the perimeter of an island
 
