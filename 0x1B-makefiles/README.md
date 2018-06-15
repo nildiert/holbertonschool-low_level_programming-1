@@ -18,7 +18,7 @@ File|Task
 1-Makefile | A Makefile with 2 varibles: CC & SRC
 2-Makefile | A Makefile with 4 variables: CC, SRC, OBJ, & NAME
 3-Makefile | A Makefile with variables and a cleaning option
-4-Makefile |
+4-Makefile | A Makefile with all of the previous features and extra flags
 5-island_perimeter.py | A function that returns the perimeter of an island
 
 ## Author
