@@ -9,14 +9,15 @@ This project in the Lower Level Programming series is about:
 * What are explicit and implicit rules
 * What are the most common / useful rules
 * What are variables and how to set and use them
+* Make file usage: `make -f [Makefile]`
 
 ---
 File|Task
 ---|---
 0-Makefile | Creates a Makefile
-1-Makefile |
-2-Makefile |
-3-Makefile |
+1-Makefile | Create a Makefile using 2 varibles: CC & SRC
+2-Makefile | Create a Makefile using 4 variables: CC, SRC, OBJ, & NAME
+3-Makefile | Create a Makefile with variables and a cleaning option
 4-Makefile |
 5-island_perimeter.py | A function that returns the perimeter of an island
 
