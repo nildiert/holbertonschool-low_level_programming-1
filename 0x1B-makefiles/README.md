@@ -13,7 +13,6 @@ This project in the Lower Level Programming series is about:
 ---
 File|Task
 ---|---
-6-hash_table_delete.c | Deletes a hash table
 0-Makefile | Creates a Makefile
 1-Makefile |
 2-Makefile |
