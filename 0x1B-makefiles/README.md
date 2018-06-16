@@ -1,4 +1,4 @@
-# 0x19. C - Hash tables
+# 0x1B. C - Makefiles
 ---
 ## Description
 
@@ -19,8 +19,11 @@ File|Task
 2-Makefile | A Makefile with 4 variables: CC, SRC, OBJ, & NAME
 3-Makefile | A Makefile with variables and a cleaning option
 4-Makefile | A Makefile with all of the previous features and extra flags
-100-Makefile | A Makefile created with restricted usage of variables
 5-island_perimeter.py | A function that returns the perimeter of an island
+100-Makefile | A Makefile created with restricted usage of variables
+main.c | Main file that was provided
+m.h | Header file that was provided
+holberton.c | Provided c file that prints out Holberton's logo
 
 ## Author
 Victor Nguyen
