@@ -1,5 +1,12 @@
 #include "search_algos.h"
 
+/**
+ * print_array - helper function to print subarray
+ * @array: pointer to first element of the array
+ * @low: size of left side of subarray
+ * @high: size of right side of subarray
+ * Return: None
+ */
 void print_array(int *array, size_t low, size_t high)
 {
 	size_t i;
@@ -28,7 +35,7 @@ int binary_search(int *array, size_t size, int value)
 
 		print_array(array, low, high);
 		if (array[mid] == value)
-			return mid;
+			return (mid);
 		if (value  > array[mid])
 			/* excludes mid */
 			low = mid + 1;
