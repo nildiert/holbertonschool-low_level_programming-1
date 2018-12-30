@@ -17,3 +17,4 @@ dog.h | Header file with a struct
 
 ## Author
 Victor Nguyen
+
